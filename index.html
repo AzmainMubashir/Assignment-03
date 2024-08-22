@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- Icon kit's code -->
+  <script src="https://kit.fontawesome.com/5a559acafe.js" crossorigin="anonymous"></script>
   <!-- DaisyUI & TailWind CDN -->
-
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Google Font CDN -->
-
+  <!-- Google Font CDN -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -25,10 +23,98 @@
 </head>
 <body data-theme="light" class="manrope">
 
-  <header>
+  <header class="bg-gradient-to-b from-stone-100 to-white">
+
     <!-- nav bar -->
-    <nav>
+
+  <nav class="max-w-6xl mx-auto pt-8 px-5 lg:px-0">
+  <div class="navbar bg-stone-100">
+    <div class="navbar-start space-x-2">
+      <div class="w-8 h-8 bg-lime-300 rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-up rotate-45 p-1"></i></div>
+      <a class="text-3xl font-extrabold">Rinterio</a>
+    </div>
+    <div class="navbar-center hidden lg:flex mr-12">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+
+      <!-- dropdown menu -->
+
+      <div class="dropdown dropdown-end md:hidden">
+            <button class="btn btn-circle btn-ghost bg-white border border-gray-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-5 w-5 stroke-current">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- dropdown menu end -->
+
+      <div class="hidden lg:flex space-x-3">
+        <div class="flex-none space-x-3">
+          <button class="btn bg-white btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <div tabindex="0" role="button" class="btn bg-white btn-circle">
+            <div class="indicator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+          </div>
+           
+        </div>
+        <div><a class="btn rounded-l-full rounded-r-full font-extrabold text-xl text-stone-900 bg-lime-300 px-5">Book Consult <div class="w-8 h-8 rounded-full flex justify-center items-center bg-black"><i class="fa-solid fa-arrow-up rotate-45 p-4 text-white"></i></div> </a></div>
+      </div>
+      
+      
+    </div>
+  </div>  
     </nav>
+    
     <!-- hero section -->
     <div class="mx-auto text-center flex flex-col justify-center items-center">
       <img src="images/banner.png" alt="Banner">
@@ -38,6 +124,9 @@
       <button>View Details</button>
     </div>
   </header>
+
+  <!-- main section -->
+
   <main>
 
     <!-- about us section -->
